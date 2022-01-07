@@ -1,0 +1,112 @@
+
+$color-num:7;
+@mixin create-cbp($breakpoint) {
+    @if($breakpoint==0) {
+        @content;
+    }
+    @else {
+        @media screen and (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+
+$map-color-props: (
+'red': $red, 
+'blue-sky':$blue-sky, 
+'blue': $blue,
+'orange': $orange,
+'green': $green,
+'yellow': $yellow,
+'purple':$purple
+);
+
+
+
+@mixin create-token($color, $modifier,$color-num) {
+   
+
+    .token-#{$modifier} {
+        display: flex;
+        position: relative;
+        height: 230px;
+        width: 230px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $color;
+        @media only screen
+        and (max-device-width: 768px)
+        and (orientation: portrait) {
+            height: 120px;
+            width: 120px;
+            padding: 0px;
+            img{
+                height: 80px;
+            }
+            .paladin_figure{
+                height: 50px;
+                left: -15px;
+            }
+        
+        }
+        @media only screen
+        and (max-device-width: 540px)
+        and (orientation: portrait) {
+            height: 80px;
+            width: 80px;
+            padding: 0px;
+            img{
+                height: 50px;
+            }
+            .paladin_figure{
+                height: 50px;
+                left: -15px;
+            }
+        
+        }
+        @media only screen
+    and (max-device-width: 360px)
+    and (orientation: portrait) {
+        height: 70px;
+        width: 70px;
+        padding: 0px;
+        img{
+            height: 40px;
+        }
+        .paladin_figure{
+            height: 50px;
+            left: -15px;
+        }
+}
+        @media only screen
+        and (max-device-width: 280px){
+            height: 60px;
+            width: 60px;
+            img{
+                height: 40px;
+            }
+            .paladin_figure{
+                height: 50px;
+                left: -15px;
+            }
+        }
+    }
+
+  
+
+}
+
+@each $modifier, $color in $map-color-props{
+    @include create-token($color, $modifier, $color-num);
+}
+
+
+// {
+   
+//     @each $color in $color-num{
+//         @include create-token($color, $color-num);
+//     }
+    
+// }

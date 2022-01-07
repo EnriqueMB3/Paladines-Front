@@ -1,0 +1,113 @@
+.__section_heroes{
+    flex-grow: 1;
+    padding: 40px;
+    @media only screen
+    and (max-device-width: 768px)
+    and (orientation: portrait) {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .token_name h3{
+            font-size: 14pt;
+        }
+    }
+    @media only screen
+    and (max-device-width: 540px)
+    and (orientation: portrait) {
+        padding: 10px;
+    }
+    @media only screen
+    and (max-device-width: 360px)
+    and (orientation: portrait) {
+        padding: 10px;
+}
+}
+
+.__footer_heroes{
+    flex-grow: 1;
+    padding: 5px;
+    background-color:$bg_primary ;
+}
+
+
+.selected{
+    border: .5em solid #2FD786;
+    @media only screen
+    and (max-device-width: 540px)
+    {
+        border: .2em solid #2FD786;
+    }
+}
+.token_name{
+    display: flex;
+    justify-content: center;
+}
+
+.paladin_figure{
+   position: absolute;
+   left: -20px;
+   bottom: 0px;
+}
+
+.__token_structure{
+    cursor: pointer;
+    @media only screen
+    and (max-device-width: 540px)
+    and (orientation: portrait) {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .token_name h3{
+            font-size: 10pt;
+        }
+    }
+    @media only screen
+    and (max-device-width: 360px)
+    and (orientation: portrait) {
+        display: flex;
+    align-items: center;
+    gap: 10px;
+    .token_name h3{
+        font-size: 10pt;
+    }
+}
+}
+
+.__board_heroes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+    @media only screen
+    and (max-device-width: 540px)
+    and (orientation: portrait) {
+        gap: 40px;
+        padding: 10px;
+        justify-content: space-around;
+    }
+    @media only screen
+    and (max-device-width: 360px)
+    and (orientation: portrait) {
+        gap: 20px;
+        padding: 0px;
+        justify-content: space-around;
+}
+}
+
+
+.__buttons_area{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin:5px 5vh;
+}
+.between{
+    justify-content: space-between;
+}
+
+.opacity{
+    opacity: 50%;
+}
+
