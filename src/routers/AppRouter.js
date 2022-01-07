@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
+  
 } from "react-router-dom";
 import { startChecking } from "../actions/auth";
 import { LoginScreen } from "../components/auth/LoginScreen";
@@ -28,7 +29,7 @@ export const AppRouter = () => {
     return (
         <BrowserRouter>
      
-                <Routes>
+                <Routes history={hashHistory}>
 
                     <Route path='/login' element={
                         <PublicRoute>
