@@ -27,7 +27,7 @@ export const QuestionToken = ({heroe, active}) => {
     return (
         <div className={'__token_structure ' + `${(!active&& ' opacity')}`} onClick={handleSelectHero}>
                     <div className={`token-${color} ` + (active&& ' selected')}>
-                        <img  src={`/assets/${name}_.png`} alt={name} title={name} height="120px"  />
+                        <img  src={`${process.env.PUBLIC_URL}/assets/${name}_.png`} alt={name} title={name} height="120px"  />
                         {
                             active&&
                         <img src={Paladin} height='115px' className='paladin_figure' alt="paladin"></img>
