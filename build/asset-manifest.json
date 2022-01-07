@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a78aa7a1.css",
-    "main.js": "/static/js/main.6e6ef180.js",
-    "static/media/Paladin.png": "/static/media/Paladin.36826ab097e7ecc0d027.png",
-    "static/media/Paladin_cut.png": "/static/media/Paladin_cut.acd612199f4520d824a9.png",
-    "static/media/group_nacion.png": "/static/media/group_nacion.82dc56228478337e0bd9.png",
-    "index.html": "/index.html",
-    "main.a78aa7a1.css.map": "/static/css/main.a78aa7a1.css.map",
-    "main.6e6ef180.js.map": "/static/js/main.6e6ef180.js.map"
+    "main.css": "/Paladines-Front/static/css/main.a78aa7a1.css",
+    "main.js": "/Paladines-Front/static/js/main.fe6f1b41.js",
+    "static/media/Paladin.png": "/Paladines-Front/static/media/Paladin.36826ab097e7ecc0d027.png",
+    "static/media/Paladin_cut.png": "/Paladines-Front/static/media/Paladin_cut.acd612199f4520d824a9.png",
+    "static/media/group_nacion.png": "/Paladines-Front/static/media/group_nacion.82dc56228478337e0bd9.png",
+    "index.html": "/Paladines-Front/index.html",
+    "main.a78aa7a1.css.map": "/Paladines-Front/static/css/main.a78aa7a1.css.map",
+    "main.fe6f1b41.js.map": "/Paladines-Front/static/js/main.fe6f1b41.js.map"
   },
   "entrypoints": [
     "static/css/main.a78aa7a1.css",
-    "static/js/main.6e6ef180.js"
+    "static/js/main.fe6f1b41.js"
   ]
 }
