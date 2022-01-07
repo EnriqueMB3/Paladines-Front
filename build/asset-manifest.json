@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a78aa7a1.css",
+    "main.js": "/static/js/main.6e6ef180.js",
+    "static/media/Paladin.png": "/static/media/Paladin.36826ab097e7ecc0d027.png",
+    "static/media/Paladin_cut.png": "/static/media/Paladin_cut.acd612199f4520d824a9.png",
+    "static/media/group_nacion.png": "/static/media/group_nacion.82dc56228478337e0bd9.png",
+    "index.html": "/index.html",
+    "main.a78aa7a1.css.map": "/static/css/main.a78aa7a1.css.map",
+    "main.6e6ef180.js.map": "/static/js/main.6e6ef180.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a78aa7a1.css",
+    "static/js/main.6e6ef180.js"
+  ]
+}
