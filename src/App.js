@@ -7,7 +7,7 @@ function App() {
   return (
     <div >
       <Provider store={store}>
-			<AppRouter basemname={`/${process.env.PUBLIC_URL}`} />
+			<AppRouter  />
 		</Provider>
     </div>
   );

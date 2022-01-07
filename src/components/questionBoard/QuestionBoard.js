@@ -17,7 +17,17 @@ export const QuestionBoard = () => {
     const  navigate = useNavigate(); 
 
     const dispatch = useDispatch();
-    useEffect(() => {  dispatch(categoryStartLoading(categoryId, uid)) }, [categoryId, uid,dispatch])
+    useEffect(() => {  
+        
+
+        if (categoryId > 23 || categoryId < 1) {
+            navigate(-1)
+        }  else{
+            dispatch(categoryStartLoading(categoryId, uid)) 
+        }
+    
+    
+    }, [categoryId, uid,dispatch])
     
     useEffect(() => {
         dispatch(heroesStartLoading());

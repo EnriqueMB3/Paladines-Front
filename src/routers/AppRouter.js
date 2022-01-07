@@ -4,6 +4,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  HashRouter,
   
 } from "react-router-dom";
 import { startChecking } from "../actions/auth";
@@ -27,7 +28,7 @@ export const AppRouter = () => {
     }
 
     return (
-        <BrowserRouter>
+        <HashRouter>
      
                 <Routes >
 
@@ -47,6 +48,6 @@ export const AppRouter = () => {
                 
                 </Routes>
      
-      </BrowserRouter>
+      </HashRouter>
     )
 }
