@@ -29,7 +29,7 @@ export const AppRouter = () => {
     return (
         <BrowserRouter>
      
-                <Routes history={hashHistory}>
+                <Routes >
 
                     <Route path='/login' element={
                         <PublicRoute>
