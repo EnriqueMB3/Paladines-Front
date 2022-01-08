@@ -32,15 +32,17 @@ export const startChecking = () => {
         const resp = await fetchConToken('auth/renew')
         
         const body = await resp.json();
-
+        
         if (body.ok) {
             localStorage.setItem('token', body.token)
             localStorage.setItem('token-init-date', new Date().getTime())
+
             const user ={
                 uid: body.uid,
-                name: body.username,
+                name: body.name,
                 hasVote: body.hasVote
             }
+        
             dispatch(login(user))
         } else {
             dispatch( checkingFinish());
