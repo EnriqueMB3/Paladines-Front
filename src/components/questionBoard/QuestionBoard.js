@@ -48,8 +48,11 @@ export const QuestionBoard = () => {
         }
     }
 
-    const finish =() => {
-        dispatch(endStartLoading(uid));
+    const endUser =() => {
+        dispatch(endStartLoading(uid)); 
+        navigate(`/thanks`);
+      
+     
     }
 
 
@@ -90,7 +93,7 @@ export const QuestionBoard = () => {
          
        {
             (Number(categoryId)===23)&&
-            <button  disabled={!active} className={`__button_primary` } onClick={finish}> Finalizar</button>
+            <button  disabled={!active} className={`__button_primary` } onClick={endUser}> Finalizar</button>
        }
             
         </div>

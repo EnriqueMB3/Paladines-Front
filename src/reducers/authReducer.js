@@ -24,10 +24,10 @@ export const authReducer = ( state  = initialState, action) => {
             return {
                 checking:false,
             }
-            case  types.EndGame:
+            case  types.endUser:
                 return{
                     ...state,
-                    hasVote:false
+                    hasVote:action.payload
                 }
         
         default:

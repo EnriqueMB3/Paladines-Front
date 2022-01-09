@@ -9,5 +9,5 @@ export const types = {
     heroesLoaded: '[question] Heroes loaded',
     categoryLoaded: '[question] Category loaded',
     setActiveHero: '[question] Set Active Hero',
-    endUser: '[question] Finish'
+    endUser: '[auth] Finish'
 }
