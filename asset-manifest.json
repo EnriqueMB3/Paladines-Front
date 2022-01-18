@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Paladines-Front/static/css/main.a78aa7a1.css",
-    "main.js": "/Paladines-Front/static/js/main.ed3b2391.js",
+    "main.css": "/Paladines-Front/static/css/main.4b9a9c02.css",
+    "main.js": "/Paladines-Front/static/js/main.f8672812.js",
     "static/media/Paladin.png": "/Paladines-Front/static/media/Paladin.36826ab097e7ecc0d027.png",
     "static/media/Paladin_cut.png": "/Paladines-Front/static/media/Paladin_cut.acd612199f4520d824a9.png",
     "static/media/group_nacion.png": "/Paladines-Front/static/media/group_nacion.82dc56228478337e0bd9.png",
     "index.html": "/Paladines-Front/index.html",
-    "main.a78aa7a1.css.map": "/Paladines-Front/static/css/main.a78aa7a1.css.map",
-    "main.ed3b2391.js.map": "/Paladines-Front/static/js/main.ed3b2391.js.map"
+    "main.4b9a9c02.css.map": "/Paladines-Front/static/css/main.4b9a9c02.css.map",
+    "main.f8672812.js.map": "/Paladines-Front/static/js/main.f8672812.js.map"
   },
   "entrypoints": [
-    "static/css/main.a78aa7a1.css",
-    "static/js/main.ed3b2391.js"
+    "static/css/main.4b9a9c02.css",
+    "static/js/main.f8672812.js"
   ]
 }
