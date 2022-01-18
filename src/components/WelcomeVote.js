@@ -5,9 +5,9 @@ import { useSelector } from 'react-redux';
 
 export const WelcomeVote = ({children}) => {
 
-    const { hasVote } = useSelector(state => state.auth);
- 
+    const { hasVote, admin  } = useSelector(state => state.auth);
 
-    return !!hasVote?   <Navigate to="/thanks"/> : children;
+
+    return !!hasVote && !!admin?   children:<Navigate to="/thanks"/> 
 }
 

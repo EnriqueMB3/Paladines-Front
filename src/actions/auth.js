@@ -17,7 +17,8 @@ export const startLogin = (username, password) => {
             const user ={
                 uid: body.uid,
                 name: body.username,
-                hasVote: body.hasVote
+                hasVote: body.hasVote,
+                admin: body.admin
             }
       
             dispatch(login(user))
@@ -47,7 +48,8 @@ export const startChecking = () => {
             const user ={
                 uid: body.uid,
                 name: body.name,
-                hasVote: body.hasVote
+                hasVote: body.hasVote,
+                admin: body.admin
             }
          
           

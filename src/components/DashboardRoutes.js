@@ -1,6 +1,8 @@
 import {  Route, Routes } from "react-router-dom"
+import { AdminRoutes } from "./AdminRoutes"
 import { AlreadyVote } from "./AlreadyVote"
 import { GoodbyeScreen } from "./goodbye/GoodbyeScreen"
+import { IsAdminRoute } from "./IsAdminRoute"
 import { PageNotFound } from "./PageNotFound"
 import { RoutesVoting } from "./RoutesVoting"
 
@@ -13,6 +15,12 @@ export const DashboardRoutes = () => {
         <>
       <Routes>
      
+      <Route exact path="/results/*" element={
+        <IsAdminRoute>
+                            <AdminRoutes/>
+                        </IsAdminRoute>
+                    }>
+      </Route>
 
       <Route exact path="/*" element={
         
@@ -23,7 +31,6 @@ export const DashboardRoutes = () => {
 
       </Route>
         
-
 
       
       <Route exact path="/thanks" element={
